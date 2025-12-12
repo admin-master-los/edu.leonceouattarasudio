@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
 
             {/* Subtitle */}
             <p className="text-xl md:text-2xl text-gray-300 font-light max-w-xl">
-              Opération zéro papier, Zéro suspend
+              Zéro Papier, 100% Performance : la digitalisation qui transforme l’éducation.
             </p>
 
             {/* Target Audience */}
@@ -53,13 +53,13 @@ const Hero: React.FC = () => {
               <span className="text-sm font-medium">Spécialisés pour :</span>
               <div className="flex flex-wrap gap-2">
                 <span className="px-3 py-1 bg-white/5 rounded-full text-sm border border-cyan-500/20 text-cyan-400">
-                  Banques
+                  Cabinet de formation
                 </span>
                 <span className="px-3 py-1 bg-white/5 rounded-full text-sm border border-purple-500/20 text-purple-400">
-                  Assurances
+                  Etablissements privés
                 </span>
                 <span className="px-3 py-1 bg-white/5 rounded-full text-sm border border-cyan-500/20 text-cyan-400">
-                  Microfinance
+                  Institutions éducatives
                 </span>
               </div>
             </div>
