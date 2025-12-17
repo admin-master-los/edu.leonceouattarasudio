@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Shield, TrendingUp, Zap, Award, Lock, Users, Globe, CheckCircle2, ArrowRight, Sparkles, Building2, CreditCard, Coins, Banknote } from 'lucide-react';
+import { Shield, TrendingUp, Zap, Award, Lock, Users, Globe, CheckCircle2, ArrowRight, Sparkles, Building2, GraduationCap, BookOpen, School } from 'lucide-react';
 
 const WhyChooseUs: React.FC = () => {
   const [activeSector, setActiveSector] = useState<number>(0);
@@ -7,83 +7,83 @@ const WhyChooseUs: React.FC = () => {
   // Secteurs cibles avec leurs spécificités
   const targetSectors = [
     {
-      icon: Building2,
-      name: 'Microfinance',
-      shortName: 'MF',
+      icon: GraduationCap,
+      name: 'Cabinet de Formation',
+      shortName: 'Formation',
       color: 'from-cyan-500 to-blue-600',
       bgColor: 'bg-cyan-500/10',
       borderColor: 'border-cyan-500/30',
       challenges: [
-        'Gestion décentralisée multi-agences',
-        'Digitalisation du crédit agricole',
-        'Scoring automatisé des emprunteurs',
-        'Mobile Money & collecte terrain'
+        'Gestion manuelle des inscriptions',
+        'Suivi formation présentiel/distanciel',
+        'Émission certificats et attestations',
+        'Planification sessions complexe'
       ],
       solutions: [
-        'Core Microfinance System léger',
-        'Application mobile agent de terrain',
-        'Workflow crédit intelligent',
-        'Analytics prédictif de défaut'
+        'Plateforme LMS complète et intuitive',
+        'Gestion inscription en ligne',
+        'Génération automatique certificats',
+        'Calendrier intelligent formations'
       ]
     },
     {
-      icon: Banknote,
-      name: 'Banques & Services Financiers',
-      shortName: 'Banque',
+      icon: School,
+      name: 'Établissement Privé',
+      shortName: 'École',
       color: 'from-blue-500 to-purple-600',
       bgColor: 'bg-blue-500/10',
       borderColor: 'border-blue-500/30',
       challenges: [
-        'Conformité réglementaire BCEAO',
-        'Intégration systèmes existants',
-        'Expérience client digitale',
-        'Sécurisation des transactions'
+        'Gestion notes et bulletins papier',
+        'Communication parents inefficace',
+        'Suivi pédagogique fragmenté',
+        'Facturation et paiements manuels'
       ],
       solutions: [
-        'Portails bancaires sécurisés',
-        'Applications mobile banking',
-        'Outils de reporting conformité',
-        'Systèmes anti-fraude adaptés'
+        'Système de gestion scolaire complet',
+        'Portail parents temps réel',
+        'Suivi élèves personnalisé',
+        'Module comptabilité intégré'
       ]
     },
     {
-      icon: Shield,
-      name: 'Assurance',
-      shortName: 'Assurance',
+      icon: Building2,
+      name: 'Institution Éducative',
+      shortName: 'Institution',
       color: 'from-purple-500 to-pink-600',
       bgColor: 'bg-purple-500/10',
       borderColor: 'border-purple-500/30',
       challenges: [
-        'Gestion manuelle des dossiers',
-        'Calcul tarifs complexes',
-        'Suivi client inefficace',
-        'Distribution limitée'
+        'Coordination multi-sites difficile',
+        'Reporting statistiques lourd',
+        'Archivage documents volumineux',
+        'Processus administratifs lents'
       ],
       solutions: [
-        'Plateforme de souscription en ligne',
-        'Workflow sinistre digitalisé',
-        'Calculateur de primes automatisé',
-        'Portail client self-service'
+        'Solution multi-campus centralisée',
+        'Tableaux de bord analytiques',
+        'Gestion documentaire numérique',
+        'Workflows automatisés'
       ]
     },
     {
-      icon: CreditCard,
-      name: 'Fintech & Paiements',
-      shortName: 'Fintech',
+      icon: BookOpen,
+      name: 'Centre E-Learning',
+      shortName: 'E-Learning',
       color: 'from-pink-500 to-orange-600',
       bgColor: 'bg-pink-500/10',
       borderColor: 'border-pink-500/30',
       challenges: [
-        'Infrastructure technique complexe',
-        'Intégration opérateurs mobile',
-        'Conformité PCI-DSS',
-        'Expérience utilisateur fluide'
+        'Création contenu e-learning complexe',
+        'Engagement apprenants à distance',
+        'Évaluation compétences difficile',
+        'Monétisation cours en ligne'
       ],
       solutions: [
-        'API de paiement moderne',
-        'Intégration Orange/MTN/Wave',
-        'Tableaux de bord temps réel',
-        'Interface utilisateur intuitive'
+        'Plateforme e-learning moderne',
+        'Outils interactifs engageants',
+        'Système évaluation avancé',
+        'Paiement en ligne intégré'
       ]
     }
   ];
@@ -93,19 +93,19 @@ const WhyChooseUs: React.FC = () => {
     {
       number: '01',
       icon: Shield,
-      title: 'Expertise Bancaire Terrain',
-      description: 'Plus de 6 années d\'expérience au sein d\'institutions bancaires en Côte d\'Ivoire, nous comprenons vos défis quotidiens de l\'intérieur. Cette connaissance pratique du secteur financier ivoirien nous permet de concevoir des solutions qui répondent réellement à vos besoins opérationnels et réglementaires.',
-      highlights: ['+6 ans dans le secteur bancaire', 'Terrain CI', 'BCEAO', 'Besoins réels'],
+      title: 'Expertise Éducation Terrain',
+      description: 'Plus de 6 années d\'expérience dans le développement de solutions digitales, avec une compréhension approfondie des défis du secteur éducatif en Côte d\'Ivoire. Cette connaissance pratique nous permet de concevoir des solutions qui répondent réellement à vos besoins pédagogiques, administratifs et de gestion.',
+      highlights: ['+6 ans expérience', 'Terrain CI', 'Besoins réels', 'Solutions adaptées'],
       color: 'from-cyan-500 to-blue-500',
       stat: '+6 ans',
-      statLabel: 'Expérience bancaire'
+      statLabel: 'Expérience digitale'
     },
     {
       number: '02',
       icon: Lock,
-      title: 'Solutions Sécurisées & Conformes',
-      description: 'Toutes nos solutions respectent les normes de sécurité bancaires : chiffrement des données sensibles, authentification renforcée, traçabilité complète des opérations. Conformité garantie avec les exigences BCEAO et les standards internationaux adaptés au contexte ivoirien.',
-      highlights: ['Chiffrement SSL', 'Auth sécurisée', 'Conformité BCEAO', 'Traçabilité'],
+      title: 'Solutions Sécurisées & RGPD',
+      description: 'Toutes nos solutions respectent les normes de sécurité : chiffrement des données sensibles (notes, données élèves), authentification renforcée, traçabilité complète des opérations. Protection des données personnelles conforme au RGPD et aux standards internationaux adaptés au contexte ivoirien.',
+      highlights: ['Chiffrement SSL', 'Auth sécurisée', 'Conformité RGPD', 'Traçabilité'],
       color: 'from-blue-500 to-purple-500',
       stat: '100%',
       statLabel: 'Sécurité garantie'
@@ -124,7 +124,7 @@ const WhyChooseUs: React.FC = () => {
       number: '04',
       icon: Users,
       title: 'Accompagnement Personnalisé',
-      description: 'Nous vous offrons un accompagnement sur mesure, assuré par un interlocuteur unique qui comprend à la fois vos enjeux métier et vos contraintes techniques. Nous formons vos équipes, fournissons une documentation claire et complète, et garantissons un support réactif pour vous permettre de devenir progressivement autonome tout en gardant un haut niveau de performance.',
+      description: 'Nous vous offrons un accompagnement sur mesure, assuré par un interlocuteur unique qui comprend à la fois vos enjeux pédagogiques et vos contraintes techniques. Nous formons vos équipes, fournissons une documentation claire et complète, et garantissons un support réactif pour vous permettre de devenir progressivement autonome tout en gardant un haut niveau de performance.',
       highlights: ['Contact direct', 'Formation équipes', 'Documentation', 'Support réactif'],
       color: 'from-pink-500 to-orange-500',
       stat: '1',
@@ -176,7 +176,7 @@ const WhyChooseUs: React.FC = () => {
             <span className="text-white">Pour vos défits ?</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-400 max-w-3xl mx-auto px-4">
-            Solutions digitales sur-mesure pour institutions financières en Côte d'Ivoire
+            Solutions digitales sur-mesure pour institutions éducatives en Côte d'Ivoire
           </p>
         </div>
 
