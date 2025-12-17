@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
 
             {/* Subtitle */}
             <p className="text-xl md:text-2xl text-gray-300 font-light max-w-xl">
-              Zéro Papier, 100% Performance : la digitalisation qui transforme l’éducation.
+              Zéro Papier, 100% Performance : la digitalisation qui transforme l'éducation.
             </p>
 
             {/* Target Audience */}
@@ -115,10 +115,10 @@ const Hero: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column - Enhanced 3D Mockups like DigitalSilk */}
+          {/* Right Column - Enhanced 3D Mockups Éducation */}
           <div className="relative hidden lg:block h-[700px]">
             
-            {/* Back Screen - Left (More angled) */}
+            {/* Back Screen - Left (Plateforme E-Learning) */}
             <div 
               className="absolute top-1/2 left-0 w-[400px] h-[500px] rounded-xl overflow-hidden shadow-[0_35px_60px_-15px_rgba(0,0,0,0.8)] border border-white/10 opacity-70 transition-all duration-700 hover:opacity-90 hover:scale-[1.02]"
               style={{
@@ -135,23 +135,46 @@ const Hero: React.FC = () => {
                   <div className="flex-1 h-6 bg-white/5 rounded ml-2" />
                 </div>
                 
-                {/* Content */}
+                {/* Content - Cours en ligne */}
                 <div className="space-y-4">
-                  <div className="h-10 bg-gradient-to-r from-cyan-500/30 to-transparent rounded animate-pulse" />
+                  <div className="h-10 bg-gradient-to-r from-cyan-500/30 to-transparent rounded animate-pulse flex items-center px-3">
+                    <div className="w-6 h-6 bg-cyan-400/30 rounded mr-2" />
+                    <div className="h-3 bg-white/20 rounded w-24" />
+                  </div>
                   <div className="grid grid-cols-2 gap-3">
-                    <div className="h-24 bg-white/5 rounded" />
-                    <div className="h-24 bg-white/5 rounded" />
+                    {/* Cours card */}
+                    <div className="h-32 bg-white/5 rounded-lg p-3">
+                      <div className="w-full h-16 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 rounded mb-2" />
+                      <div className="h-2 bg-white/20 rounded w-3/4 mb-1" />
+                      <div className="h-2 bg-white/10 rounded w-1/2" />
+                    </div>
+                    <div className="h-32 bg-white/5 rounded-lg p-3">
+                      <div className="w-full h-16 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded mb-2" />
+                      <div className="h-2 bg-white/20 rounded w-3/4 mb-1" />
+                      <div className="h-2 bg-white/10 rounded w-1/2" />
+                    </div>
                   </div>
                   <div className="space-y-2">
-                    <div className="h-16 bg-white/5 rounded" />
-                    <div className="h-16 bg-white/5 rounded" />
-                    <div className="h-16 bg-white/5 rounded" />
+                    <div className="h-16 bg-white/5 rounded flex items-center px-3 gap-3">
+                      <div className="w-10 h-10 bg-cyan-500/20 rounded" />
+                      <div className="flex-1 space-y-1">
+                        <div className="h-2 bg-white/20 rounded w-3/4" />
+                        <div className="h-2 bg-white/10 rounded w-1/2" />
+                      </div>
+                    </div>
+                    <div className="h-16 bg-white/5 rounded flex items-center px-3 gap-3">
+                      <div className="w-10 h-10 bg-purple-500/20 rounded" />
+                      <div className="flex-1 space-y-1">
+                        <div className="h-2 bg-white/20 rounded w-3/4" />
+                        <div className="h-2 bg-white/10 rounded w-1/2" />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Main Screen - Center (Like DigitalSilk focal point) */}
+            {/* Main Screen - Center (Dashboard Scolaire) */}
             <div 
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[600px] rounded-2xl overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.9)] border-[3px] border-white/20 transition-all duration-700 hover:scale-[1.03] hover:shadow-[0_50px_100px_-20px_rgba(6,182,212,0.3)]"
               style={{
@@ -174,10 +197,10 @@ const Hero: React.FC = () => {
                 </div>
                 
                 <div className="p-8">
-                  {/* Dashboard Header with glow effect */}
+                  {/* Dashboard Header */}
                   <div className="mb-8">
                     <h3 className="text-white font-bold text-2xl mb-2 bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                      Dashboard Bancaire
+                      Dashboard Éducatif
                     </h3>
                     <p className="text-gray-400 text-sm flex items-center gap-2">
                       <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
@@ -185,16 +208,16 @@ const Hero: React.FC = () => {
                     </p>
                   </div>
 
-                  {/* Enhanced Stats Cards with glassmorphism */}
+                  {/* Enhanced Stats Cards - Éducation */}
                   <div className="grid grid-cols-2 gap-5 mb-8">
                     <div className="relative group">
                       <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-2xl blur opacity-50 group-hover:opacity-75 transition-opacity" />
                       <div className="relative bg-gradient-to-br from-cyan-500 to-cyan-600 p-5 rounded-2xl border border-cyan-400/30">
-                        <p className="text-white/90 text-xs font-medium mb-2 uppercase tracking-wider">Transactions</p>
-                        <p className="text-white font-bold text-3xl">1.2M</p>
+                        <p className="text-white/90 text-xs font-medium mb-2 uppercase tracking-wider">Élèves</p>
+                        <p className="text-white font-bold text-3xl">2.4K</p>
                         <div className="absolute top-2 right-2 text-white/30">
                           <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+                            <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
                           </svg>
                         </div>
                       </div>
@@ -203,41 +226,41 @@ const Hero: React.FC = () => {
                     <div className="relative group">
                       <div className="absolute inset-0 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl blur opacity-50 group-hover:opacity-75 transition-opacity" />
                       <div className="relative bg-gradient-to-br from-purple-500 to-purple-600 p-5 rounded-2xl border border-purple-400/30">
-                        <p className="text-white/90 text-xs font-medium mb-2 uppercase tracking-wider">Clients</p>
-                        <p className="text-white font-bold text-3xl">45K</p>
+                        <p className="text-white/90 text-xs font-medium mb-2 uppercase tracking-wider">Cours</p>
+                        <p className="text-white font-bold text-3xl">186</p>
                         <div className="absolute top-2 right-2 text-white/30">
                           <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+                            <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
                           </svg>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  {/* Enhanced Chart with better design */}
+                  {/* Enhanced Chart - Progression */}
                   <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
                     <div className="flex items-center justify-between mb-4">
-                      <p className="text-gray-400 text-sm font-medium">Performance 2024</p>
+                      <p className="text-gray-400 text-sm font-medium">Taux de Réussite 2025</p>
                       <div className="flex gap-3 text-xs">
-                        <span className="text-cyan-400">● Revenus</span>
-                        <span className="text-purple-400">● Dépenses</span>
+                        <span className="text-cyan-400">● Réussite</span>
+                        <span className="text-purple-400">● Présence</span>
                       </div>
                     </div>
                     <div className="flex items-end justify-between h-48 gap-3">
                       <div className="flex-1 relative group">
-                        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-cyan-500 to-cyan-400 rounded-t-lg transition-all duration-300 group-hover:from-cyan-400 group-hover:to-cyan-300" style={{ height: '65%' }} />
-                      </div>
-                      <div className="flex-1 relative group">
-                        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-purple-500 to-purple-400 rounded-t-lg transition-all duration-300 group-hover:from-purple-400 group-hover:to-purple-300" style={{ height: '85%' }} />
-                      </div>
-                      <div className="flex-1 relative group">
                         <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-cyan-500 to-cyan-400 rounded-t-lg transition-all duration-300 group-hover:from-cyan-400 group-hover:to-cyan-300" style={{ height: '75%' }} />
                       </div>
                       <div className="flex-1 relative group">
-                        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-purple-500 to-purple-400 rounded-t-lg transition-all duration-300 group-hover:from-purple-400 group-hover:to-purple-300" style={{ height: '95%' }} />
+                        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-purple-500 to-purple-400 rounded-t-lg transition-all duration-300 group-hover:from-purple-400 group-hover:to-purple-300" style={{ height: '88%' }} />
                       </div>
                       <div className="flex-1 relative group">
-                        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-cyan-500 to-cyan-400 rounded-t-lg transition-all duration-300 group-hover:from-cyan-400 group-hover:to-cyan-300" style={{ height: '80%' }} />
+                        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-cyan-500 to-cyan-400 rounded-t-lg transition-all duration-300 group-hover:from-cyan-400 group-hover:to-cyan-300" style={{ height: '82%' }} />
+                      </div>
+                      <div className="flex-1 relative group">
+                        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-purple-500 to-purple-400 rounded-t-lg transition-all duration-300 group-hover:from-purple-400 group-hover:to-purple-300" style={{ height: '92%' }} />
+                      </div>
+                      <div className="flex-1 relative group">
+                        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-cyan-500 to-cyan-400 rounded-t-lg transition-all duration-300 group-hover:from-cyan-400 group-hover:to-cyan-300" style={{ height: '85%' }} />
                       </div>
                     </div>
                   </div>
@@ -245,7 +268,7 @@ const Hero: React.FC = () => {
               </div>
             </div>
 
-            {/* Front Screen - Right (Angled opposite) */}
+            {/* Front Screen - Right (Gestion Notes) */}
             <div 
               className="absolute top-1/2 right-0 w-[400px] h-[500px] rounded-xl overflow-hidden shadow-[0_35px_60px_-15px_rgba(0,0,0,0.8)] border border-white/10 opacity-70 transition-all duration-700 hover:opacity-90 hover:scale-[1.02]"
               style={{
@@ -262,27 +285,54 @@ const Hero: React.FC = () => {
                   <div className="flex-1 h-6 bg-white/5 rounded ml-2" />
                 </div>
                 
-                {/* Content */}
+                {/* Content - Bulletin de notes */}
                 <div className="mb-6">
-                  <div className="h-8 bg-gradient-to-r from-purple-500/30 to-transparent rounded w-3/4 mb-3" />
-                  <div className="h-5 bg-white/5 rounded w-1/2" />
+                  <div className="h-8 bg-gradient-to-r from-purple-500/30 to-transparent rounded w-3/4 mb-3 flex items-center px-2">
+                    <div className="w-5 h-5 bg-purple-400/40 rounded mr-2" />
+                  </div>
+                  <div className="h-5 bg-white/5 rounded w-2/3 mb-2" />
+                  <div className="h-4 bg-white/5 rounded w-1/2" />
                 </div>
 
+                {/* Matières et notes */}
                 <div className="grid grid-cols-2 gap-4 mb-6">
                   <div className="relative bg-gradient-to-br from-cyan-500/20 to-cyan-600/10 p-4 rounded-xl border border-cyan-500/20">
-                    <div className="h-4 bg-white/20 rounded w-full mb-2" />
-                    <div className="h-7 bg-white/30 rounded w-2/3" />
+                    <div className="h-3 bg-white/20 rounded w-full mb-2" />
+                    <div className="h-8 bg-white/30 rounded w-2/3 flex items-center justify-center">
+                      <span className="text-white text-xs font-bold">15.5</span>
+                    </div>
                   </div>
                   <div className="relative bg-gradient-to-br from-purple-500/20 to-purple-600/10 p-4 rounded-xl border border-purple-500/20">
-                    <div className="h-4 bg-white/20 rounded w-full mb-2" />
-                    <div className="h-7 bg-white/30 rounded w-2/3" />
+                    <div className="h-3 bg-white/20 rounded w-full mb-2" />
+                    <div className="h-8 bg-white/30 rounded w-2/3 flex items-center justify-center">
+                      <span className="text-white text-xs font-bold">17.2</span>
+                    </div>
                   </div>
                 </div>
 
+                {/* Liste des évaluations */}
                 <div className="space-y-3">
-                  <div className="h-12 bg-white/5 rounded-lg" />
-                  <div className="h-12 bg-white/5 rounded-lg" />
-                  <div className="h-12 bg-white/5 rounded-lg" />
+                  <div className="h-12 bg-white/5 rounded-lg flex items-center px-3 gap-2">
+                    <div className="w-2 h-2 bg-green-400 rounded-full" />
+                    <div className="flex-1">
+                      <div className="h-2 bg-white/20 rounded w-3/4 mb-1" />
+                      <div className="h-2 bg-white/10 rounded w-1/2" />
+                    </div>
+                  </div>
+                  <div className="h-12 bg-white/5 rounded-lg flex items-center px-3 gap-2">
+                    <div className="w-2 h-2 bg-cyan-400 rounded-full" />
+                    <div className="flex-1">
+                      <div className="h-2 bg-white/20 rounded w-3/4 mb-1" />
+                      <div className="h-2 bg-white/10 rounded w-1/2" />
+                    </div>
+                  </div>
+                  <div className="h-12 bg-white/5 rounded-lg flex items-center px-3 gap-2">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full" />
+                    <div className="flex-1">
+                      <div className="h-2 bg-white/20 rounded w-3/4 mb-1" />
+                      <div className="h-2 bg-white/10 rounded w-1/2" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
