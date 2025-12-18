@@ -6,7 +6,7 @@
 import React from 'react';
 import { Video, Phone, Users, MessageCircle, Check } from 'lucide-react';
 import { useBooking } from '../../contexts/BookingContext';
-import { MeetingChannel, ChannelOption } from '../../types/booking.types';
+import { MeetingChannel, ChannelOption } from '../../types/booking.types'; 
 
 const CHANNEL_OPTIONS: ChannelOption[] = [
   {

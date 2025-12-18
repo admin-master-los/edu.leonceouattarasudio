@@ -8,7 +8,7 @@ import { User, Mail, Phone, Building, MessageSquare, ChevronLeft, ChevronRight, 
 import { useBooking } from '../../contexts/BookingContext';
 import ChannelSelection from './ChannelSelection';
 import { MeetingChannel } from '../../types/booking.types';
-import { COUNTRIES, detectUserCountry, CountryOption } from '../../utils/countryHelpers';
+import { COUNTRIES, detectUserCountry, CountryOption } from '../../utils/countryHelpers'; 
 
 const ClientForm: React.FC = () => {
   const { bookingData, setClient, setChannel, setAcceptTerms, nextStep, previousStep } = useBooking();

@@ -1,7 +1,7 @@
 /**
  * Component: ServiceSelection
  * Étape 1 - Sélection du service
- */
+ */ 
 
 import React from 'react';
 import { Clock, Check, ChevronRight } from 'lucide-react';

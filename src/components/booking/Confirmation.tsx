@@ -9,7 +9,7 @@ import { useBooking } from '../../contexts/BookingContext';
 import { useCreateMeeting } from '../../admin/hooks/useMeetings';
 import { useNavigate } from 'react-router-dom';
 import { sendMeetingEmails } from '../../services/emailService';
-import { generateMeetingICS } from '../../utils/icsGenerator';
+import { generateMeetingICS } from '../../utils/icsGenerator'; 
 
 // Helper pour afficher le nom du canal
 const getChannelLabel = (channel: string | null): string => {

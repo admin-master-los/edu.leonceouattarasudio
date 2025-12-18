@@ -6,7 +6,7 @@
 import React, { useState, useEffect } from 'react';
 import { Calendar, Clock, ChevronLeft, ChevronRight, AlertCircle } from 'lucide-react';
 import { useBooking } from '../../contexts/BookingContext';
-import { checkSlotAvailability } from '../../admin/services/meetingsService';
+import { checkSlotAvailability } from '../../admin/services/meetingsService';  
 import { generateTimeSlots } from '../../admin/utils/meetingHelpers';
 import { useAllAvailabilities, useAllBlockedDates } from '../../admin/hooks/useAvailability';
 import { useSettings } from '../../admin/hooks/useMeetingSettings';
