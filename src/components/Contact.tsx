@@ -745,7 +745,7 @@ ${formData.project.trim()}
                           J'accepte que mes données personnelles soient collectées
                           conformément à la{' '}
                           <a
-                            href="/politique-confidentialite"
+                            href="/Confidentialite"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-purple-400 hover:text-purple-300 underline inline-flex items-center gap-1"
