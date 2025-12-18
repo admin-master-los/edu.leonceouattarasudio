@@ -43,10 +43,10 @@ interface ExtendedContactForm extends ContactForm {
 // Types de projets - ALIGNÉS SUR LES SERVICES (prix et durées discutés lors du contact)
 const PROJECT_TYPES = [
   { id: 'portail-web', label: 'Développement de Portails Web', icon: Globe },
-  { id: 'solutions-metiers', label: 'Solutions Métiers Financières', icon: Code },
-  { id: 'digitalisation-bpm', label: 'Digitalisation & Workflows (BPM)', icon: TrendingUp },
-  { id: 'systemes-paiement', label: 'Systèmes de Paiement', icon: DollarSign },
-  { id: 'systemes-information', label: 'Optimisation Systèmes Info (SI)', icon: Building2 },
+  { id: 'site-web-coach-formateur', label: 'Site web et portail digital pour coachs et formateurs', icon: Globe },
+  { id: 'solutions-metiers', label: 'Système de gestion scolaire sur mesure', icon: Code },
+  { id: 'digitalisation-bpm', label: 'Digitalisation de processus', icon: TrendingUp },
+  { id: 'systemes-information', label: 'Optimisation Systèmes d\'Information (SI)', icon: Building2 },
   { id: 'data-analytics', label: 'Tableaux de bord / KPI & Analytics', icon: TrendingUp },
 ];
 
@@ -64,13 +64,12 @@ const FEATURES = [
 
 // Secteurs
 const SECTORS = [
-  'Microfinance',
-  'Banque',
-  'Assurance',
-  'Fintech',
-  'E-commerce',
-  'Santé',
-  'Éducation',
+  'Universités privées',
+  'Cabinet de formation',
+  'Écoles professionnelles & techniques',
+  'Établissements secondaires privés',
+  'Institutions éducatives spécialisées',
+  'Coach et formateur spécialisé',
   'Autre',
 ];
 
